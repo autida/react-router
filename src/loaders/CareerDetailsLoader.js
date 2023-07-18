@@ -15,6 +15,8 @@ const CareerDetailsLoader = async ({ params }) => {
     return response.data;
   } catch (error) {
     console.error("Error fetching data:", error);
+    throw Error("Could not find that career");
+
     return []; // Return an empty array in case of an error or failed request
   }
 };

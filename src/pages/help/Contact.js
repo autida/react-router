@@ -9,10 +9,10 @@ const Contact = () => {
           <span>Your email:</span>
           <input type="email" name="email" required />
         </label>
-        <lable>
+        <label>
           <span>Your message:</span>
           <textarea name="message" required></textarea>
-        </lable>
+        </label>
         <button>Submit</button>
       </form>
     </div>
