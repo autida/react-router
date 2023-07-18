@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import axios from "axios";
-const CareerDetailsLoader = async () => {
-  const { id } = useParams();
+const CareerDetailsLoader = async ({ params }) => {
+  const { id } = params;
   try {
     const response = await axios.get(
       "http://localhost:8080/api/careers/" + id,

@@ -5,7 +5,7 @@ const CareerDetails = () => {
   const career = useLoaderData();
   return (
     <div className="career-details">
-      <h2>CareerDetails for {career.title}</h2>
+      <h2>Career Details for {career.title}</h2>
       <p>Starting salary: {career.salary}</p>
       <p>Location: {career.location}</p>
       <div className="details">
