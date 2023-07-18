@@ -1,10 +1,10 @@
-import React from "react";
+import { Form } from "react-router-dom";
 
 const Contact = () => {
   return (
     <div className="contact">
       <h3>Contact Us</h3>
-      <form>
+      <Form method="post" action="/help/contact">
         <label>
           <span>Your email:</span>
           <input type="email" name="email" required />
@@ -14,7 +14,7 @@ const Contact = () => {
           <textarea name="message" required></textarea>
         </label>
         <button>Submit</button>
-      </form>
+      </Form>
     </div>
   );
 };
